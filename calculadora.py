@@ -65,23 +65,23 @@ class Potenciacao(Operacao):
 class Testes(TestCase):
     def test_soma(self):
         calculo_soma = Calculadora()
-        result = calculo_soma.calcular(2,3,'soma')
-        self.assertEqual(result,5)
+        result = calculo_soma.calcular(10,10,'soma')
+        self.assertEqual(result,20)
         
     def test_multiplicacao(self):
         calculo_multiplicacao = Calculadora()
-        result = calculo_multiplicacao.calcular(2,5,'multiplicacao')
-        self.assertEqual(result,10)
+        result = calculo_multiplicacao.calcular(10,2,'multiplicacao')
+        self.assertEqual(result,20)
 
     def test_divisao(self):
         calculo_divisao = Calculadora()
-        result = calculo_divisao.calcular(2,4,'divisao')
-        self.assertEqual(result,0.5)
+        result = calculo_divisao.calcular(20,2,'divisao')
+        self.assertEqual(result,10)
 
     def test_subtracao(self):
         calculo_subtracao = Calculadora()
-        result = calculo_subtracao.calcular(10,50,'subtracao')
-        self.assertEqual(result, -40)
+        result = calculo_subtracao.calcular(20,5,'subtracao')
+        self.assertEqual(result, 15)
 
     def test_potenciacao(self):
         calculo_potencia = Calculadora()
